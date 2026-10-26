@@ -1,0 +1,17 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+# Social links are disabled on About for now. Add your own values below, then
+# set social: true in _pages/about.md when you want to display them.
+# If restoring a CV PDF, also remove assets/pdf/ from _config.yml's exclude list.
+# cv_pdf: /assets/pdf/your-cv.pdf
+# email: your-address@example.com
+# inspirehep_id: YOUR_INSPIRE_HEP_ID
+# rss_icon: true # enable after restoring the blog
+# scholar_userid: YOUR_GOOGLE_SCHOLAR_ID
+# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+# custom_social: # choose a name not already defined by jekyll-socials
+#   logo: https://example.com/your-logo.png # png, svg, or jpg
+#   title: Your profile
+#   url: https://example.com/your-profile/
