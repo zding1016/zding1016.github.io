@@ -17,7 +17,7 @@ nav_order: 1
 
 ## Working Papers
 
-<!-- Add papers to _bibliography/working_papers.bib. Website links to SSRN. -->
+<!-- Add papers to _bibliography/working_papers.bib. Use ssrn for SSRN links. -->
 <div class="publications">
 
 {% research_bibliography %}
