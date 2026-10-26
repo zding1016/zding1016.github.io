@@ -1,46 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+---
+layout: null
+permalink: /dynamic-policy-evaluation.html
+title: "Dynamic Policy Evaluation under Selective Labels: Evidence from Human and Algorithmic Decision-Making in Sequential Allocation"
+description: "Working paper by Ziqian Ding, Zoey Jiang, and Param Vir Singh."
+nav: false
+---
 
-  <title>Dynamic Policy Evaluation under Selective Labels</title>
-
-  <meta name="citation_title"
-        content="Dynamic Policy Evaluation under Selective Labels: Evidence from Human and Algorithmic Decision-Making in Sequential Allocation">
-
-  <meta name="citation_author" content="Ziqian Ding">
-  <meta name="citation_author" content="Zoey Jiang">
-  <meta name="citation_author" content="Param Vir Singh">
-
-  <meta name="citation_publication_date" content="2025">
-
-  <meta name="citation_pdf_url"
-        content="https://zding1016.github.io/dynamic-policy-evaluation.pdf">
-</head>
-
-<body>
-
-  <h1>Dynamic Policy Evaluation under Selective Labels:
-  Evidence from Human and Algorithmic Decision-Making
-  in Sequential Allocation</h1>
-
-  <p>Ziqian Ding, Zoey Jiang, Param Vir Singh</p>
-
-  <h2>Abstract</h2>
-  <p>
-    Evaluating sequential decision-making is challenging when outcomes are observed only for chosen actions, creating a selective labels problem that is compounded in dynamic settings where decisions influence future information and learning. This paper studies how to compare human and algorithmic policies in such environments using observational data, focusing on settings where decisions must balance exploration and exploitation over time.
-    
-    We apply this framework to biomedical innovation, modeling scientists’ trial allocation decisions as a combinatorial contextual bandit with delayed feedback using data from over 700,000 experiments in the Protein Structure Initiative. Benchmarking human decisions against a neural upper confidence bound algorithm, we find that the algorithm achieves approximately 18\% more successful project completions under comparable constraints. We find that human decision-makers systematically overestimate success probabilities and allocate effort too diffusely across projects, leading to inefficient exploration. Correcting prediction errors accounts for the majority of the performance gap, while improvements in exploration behavior provide additional gains.
-This paper contributes a general framework for evaluating dynamic policies under selective labels and provides large-scale empirical evidence that algorithmic policies can outperform human experts in complex sequential allocation tasks.
-  </p>
-
-  <p>
-    <a href="dynamic-policy-evaluation.pdf">Download PDF</a>
-    |
-    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5587814">
-      SSRN
-    </a>
-  </p>
-
-</body>
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.liquid %}
+    <meta
+      name="citation_title"
+      content="Dynamic Policy Evaluation under Selective Labels: Evidence from Human and Algorithmic Decision-Making in Sequential Allocation"
+    />
+    <meta name="citation_author" content="Ziqian Ding" />
+    <meta name="citation_author" content="Zoey Jiang" />
+    <meta name="citation_author" content="Param Vir Singh" />
+    <meta name="citation_publication_date" content="2025" />
+    <meta name="citation_pdf_url" content="https://zding1016.github.io/dynamic-policy-evaluation.pdf" />
+  </head>
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    {% include header.liquid %}
+    <main class="container mt-5">
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">
+            Dynamic Policy Evaluation under Selective Labels: Evidence from Human and Algorithmic Decision-Making in Sequential Allocation
+          </h1>
+          <p class="desc">Ziqian Ding, Zoey Jiang, Param Vir Singh</p>
+          <p>Working paper, 2025</p>
+        </header>
+        <article>
+          <h2>Abstract</h2>
+          <p>
+            Evaluating sequential decision-making is challenging when outcomes are observed only for chosen actions, creating a selective labels
+            problem that is compounded in dynamic settings where decisions influence future information and learning. This paper studies how to
+            compare human and algorithmic policies in such environments using observational data, focusing on settings where decisions must balance
+            exploration and exploitation over time.
+          </p>
+          <p>
+            We apply this framework to biomedical innovation, modeling scientists’ trial allocation decisions as a combinatorial contextual bandit
+            with delayed feedback using data from over 700,000 experiments in the Protein Structure Initiative. Benchmarking human decisions against a
+            neural upper confidence bound algorithm, we find that the algorithm achieves approximately 18% more successful project completions under
+            comparable constraints. We find that human decision-makers systematically overestimate success probabilities and allocate effort too
+            diffusely across projects, leading to inefficient exploration. Correcting prediction errors accounts for the majority of the performance
+            gap, while improvements in exploration behavior provide additional gains.
+          </p>
+          <p>
+            This paper contributes a general framework for evaluating dynamic policies under selective labels and provides large-scale empirical
+            evidence that algorithmic policies can outperform human experts in complex sequential allocation tasks.
+          </p>
+          <p>
+            <a href="{{ '/dynamic-policy-evaluation.pdf' | relative_url }}">Download PDF</a>
+            |
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5587814">SSRN</a>
+          </p>
+          <p><a href="{{ '/research/' | relative_url }}">Back to Research</a></p>
+        </article>
+      </div>
+    </main>
+    {% include footer.liquid %} {% include scripts.liquid %}
+  </body>
 </html>
