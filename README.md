@@ -30,7 +30,7 @@ Jekyll generates `sitemap.xml` and `robots.txt` during the build. This is a root
 
 ## Preview and validate locally
 
-Use Ruby **3.3.5**, Bundler **4.0.6**, and Node **20** to match deployment. Install Ruby through your preferred version manager; macOS’s system Ruby is too old. Keep the supplied dependency lockfiles.
+Use the latest Ruby **3.3.x** patch, Bundler **4.0.6**, and Node **20** to match deployment. CI uses the pinned **Ubuntu 24.04** runner and `ruby-version: "3.3"` so it receives compatible Ruby patch updates without following `ubuntu-latest` OS changes. Install Ruby through your preferred version manager; macOS’s system Ruby is too old. Keep the supplied dependency lockfiles.
 
 ```bash
 gem install bundler -v 4.0.6
@@ -82,3 +82,8 @@ Before the first deployment:
 4. In **Settings → Pages**, choose **Deploy from a branch**, branch **gh-pages**, folder **/(root)**.
 
 The workflow creates `.nojekyll` in its output so GitHub serves the already-built site. Edit the source branch; `gh-pages` is generated output and is overwritten by deployment.
+
+### Troubleshooting deployment
+
+- **Ruby version unavailable:** keep the workflow on `ubuntu-24.04` with `ruby-version: "3.3"`. Newer runner images may not provide old patch releases such as 3.3.5. See [setup-ruby's supported platforms](https://github.com/ruby/setup-ruby#supported-platforms).
+- **`actions/jekyll-build-pages` cannot find `al_folio_core`:** Pages is trying to build the source branch with GitHub's restricted Jekyll environment. First let **Build and deploy site** finish successfully and create `gh-pages`; then select **Deploy from a branch → gh-pages → /(root)** in [repository Pages settings](https://github.com/zding1016/zding1016.github.io/settings/pages). Do not select `main` or add `.nojekyll` to the source branch. See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#troubleshooting-publishing-from-a-branch).
