@@ -16,14 +16,16 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    # Keep the OS stable when GitHub rolls ubuntu-latest to a new release.
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out source
         uses: actions/checkout@v7
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          # New runner images only provide the latest patch of each Ruby series.
+          ruby-version: "3.3"
           bundler: "4.0.6"
           bundler-cache: true
       - name: Set up Node
