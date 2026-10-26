@@ -11,12 +11,13 @@ The navigation contains **About** and **Research**. The existing paper detail pa
 | Name, domain, feature switches, and unpublished files | `_config.yml`                      |
 | About page                                            | `_pages/about.md`                  |
 | Research page                                         | `_pages/research.md`               |
+| Published papers                                      | `_bibliography/publications.bib`   |
 | Working papers and expandable abstracts               | `_bibliography/working_papers.bib` |
 | Existing paper detail page and citation metadata      | `dynamic-policy-evaluation.html`   |
 | Paper PDF                                             | `dynamic-policy-evaluation.pdf`    |
 | Social profile examples, currently commented out      | `_data/socials.yml`                |
 
-For a new working paper, add a BibTeX entry to `working_papers.bib`. The native **Abs** control expands its `abstract`; **PDF** opens `pdf`; **HTML** opens `html`; and **Website** opens `website` (currently the SSRN page). Use full URLs for root-level HTML and PDF files: al-folio otherwise interprets those fields relative to its example asset directories.
+For a published paper, add a BibTeX entry to `publications.bib`; for a working paper, use `working_papers.bib`. Research displays these in separate sections without large year headings (`scholar.group_by: none`). The native **Abs** control expands its `abstract`; **PDF** opens `pdf`; **HTML** opens `html`; **DOI** opens `doi`; and **Website** opens `website` (currently the SSRN page). Use full URLs for root-level HTML and PDF files: al-folio otherwise interprets those fields relative to its example asset directories.
 
 The paper’s title, author order, year, and abstract also appear on its detail page; keep the two sources consistent when updating it. Keep its `citation_*` meta tags in the HTML head.
 

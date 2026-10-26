@@ -410,7 +410,7 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
+  group_by: none # omit large year headings; each citation still shows its year
   group_order: descending
 
 # Display different badges withs stats for your publications

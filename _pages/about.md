@@ -29,4 +29,4 @@ latest_posts:
   limit: 3
 ---
 
-See my [research]({{ '/research/' | relative_url }}) for working papers.
+<!-- See my [research]({{ '/research/' | relative_url }}) for working papers. -->
