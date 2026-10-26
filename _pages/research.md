@@ -11,7 +11,7 @@ nav_order: 1
 
 <div class="publications">
 
-{% bibliography --file publications %}
+{% research_bibliography --file publications %}
 
 </div>
 
@@ -20,6 +20,6 @@ nav_order: 1
 <!-- Add papers to _bibliography/working_papers.bib. Website links to SSRN. -->
 <div class="publications">
 
-{% bibliography %}
+{% research_bibliography %}
 
 </div>
