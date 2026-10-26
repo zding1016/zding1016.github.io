@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Ziqian Ding # use one font weight for the full name in the heading and navbar
 first_name: Ziqian
 middle_name:
 last_name: Ding

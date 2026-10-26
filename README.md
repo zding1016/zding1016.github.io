@@ -21,7 +21,7 @@ For a published paper, add a BibTeX entry to `publications.bib`; for a working p
 
 The paper’s title, author order, year, and abstract also appear on its detail page; keep the two sources consistent when updating it. Keep its `citation_*` meta tags in the HTML head.
 
-Keep **all authors**, including Ziqian Ding, in each BibTeX `author` field. Research uses the site-owned `research_bibliography` tag in `_plugins/research_bibliography.rb` to display every coauthor, in the original order, as “with Name, Name”. It omits your name using the identity in `scholar.first_name` and `scholar.last_name`, without changing the citation data or adding an author expansion control.
+Keep **all authors**, including Ziqian Ding, in each BibTeX `author` field. Research uses the site-owned `research_bibliography` tag in `_plugins/research_bibliography.rb` to display every coauthor, in the original order, as “with Name, Name and Name”. It omits your name using the identity in `scholar.first_name` and `scholar.last_name`, without changing the citation data or adding an author expansion control.
 
 Preserve these public URLs:
 

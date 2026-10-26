@@ -22,7 +22,8 @@ module Jekyll
       if names.empty?
         author_line.remove
       else
-        author_line.content = "with #{names.join(', ')}"
+        name_list = names.length > 1 ? "#{names[0...-1].join(', ')} and #{names.last}" : names.first
+        author_line.content = "with #{name_list}"
       end
       card.to_html
     end
