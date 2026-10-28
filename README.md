@@ -6,14 +6,14 @@ The navigation contains **About** and **Research**.
 
 ## Edit the site
 
-| Content                                               | Source                             |
-| ----------------------------------------------------- | ---------------------------------- |
-| Name, domain, feature switches, and unpublished files | `_config.yml`                      |
-| About page                                            | `_pages/about.md`                  |
-| Research page                                         | `_pages/research.md`               |
-| Published papers                                      | `_bibliography/publications.bib`   |
-| Paper PDF                                             | `dynamic-policy-evaluation.pdf`    |
-| Social profile examples, currently commented out      | `_data/socials.yml`                |
+| Content                                               | Source                           |
+| ----------------------------------------------------- | -------------------------------- |
+| Name, domain, feature switches, and unpublished files | `_config.yml`                    |
+| About page                                            | `_pages/about.md`                |
+| Research page                                         | `_pages/research.md`             |
+| Published papers                                      | `_bibliography/publications.bib` |
+| Paper PDF                                             | `dynamic-policy-evaluation.pdf`  |
+| Social profile examples, currently commented out      | `_data/socials.yml`              |
 
 For a published paper, add a BibTeX entry to `publications.bib`; for a working paper, use `working_papers.bib`. Research displays these in separate sections without large year headings (`scholar.group_by: none`). Use `ssrn` for an **SSRN** button and `publisher_url` for a **Publisher** button linking to the journal's article page. Keep the standard BibTeX `publisher` field for the publisher's name. These custom button mappings live in `_plugins/research_bibliography.rb` under `PAPER_LINKS`.
 
