@@ -1,8 +1,8 @@
 # Ziqian Ding’s personal website
 
-Academic website at [zding1016.github.io](https://zding1016.github.io), built with the supplied [al-folio v1 starter](https://github.com/alshedivat/al-folio).
+Academic website at [zding1016.github.io](https://zding1016.github.io), built with [al-folio v1 starter](https://github.com/alshedivat/al-folio).
 
-The navigation contains **About** and **Research**. The existing paper detail page uses the same styling, and the PDF and Google verification file keep their original URLs. No profile photo is displayed.
+The navigation contains **About** and **Research**.
 
 ## Edit the site
 
@@ -12,8 +12,6 @@ The navigation contains **About** and **Research**. The existing paper detail pa
 | About page                                            | `_pages/about.md`                  |
 | Research page                                         | `_pages/research.md`               |
 | Published papers                                      | `_bibliography/publications.bib`   |
-| Working papers and expandable abstracts               | `_bibliography/working_papers.bib` |
-| Existing paper detail page and citation metadata      | `dynamic-policy-evaluation.html`   |
 | Paper PDF                                             | `dynamic-policy-evaluation.pdf`    |
 | Social profile examples, currently commented out      | `_data/socials.yml`                |
 
@@ -22,14 +20,6 @@ For a published paper, add a BibTeX entry to `publications.bib`; for a working p
 The native **Abs** control expands its `abstract`; **PDF** opens `pdf`; **HTML** opens `html`; **DOI** opens `doi`; and **Website** opens `website`. Use full URLs for root-level HTML and PDF files: al-folio otherwise interprets those fields relative to its example asset directories.
 
 The paper’s title, author order, year, and abstract also appear on its detail page; keep the two sources consistent when updating it. Keep its `citation_*` meta tags in the HTML head.
-
-Keep **all authors**, including Ziqian Ding, in each BibTeX `author` field. Research uses the site-owned `research_bibliography` tag in `_plugins/research_bibliography.rb` to display every coauthor, in the original order, as “with Name, Name and Name”. It omits your name using the identity in `scholar.first_name` and `scholar.last_name`, without changing the citation data or adding an author expansion control.
-
-Preserve these public URLs:
-
-- `/dynamic-policy-evaluation.html`
-- `/dynamic-policy-evaluation.pdf`
-- `/google41bb5e02e922f801.html`
 
 Jekyll generates `sitemap.xml` and `robots.txt` during the build. This is a root-domain GitHub Pages site, so `_config.yml` must keep `url: https://zding1016.github.io` and `baseurl: ""`. Upstream documentation’s `/al-folio` path applies to the template demonstration site.
 
