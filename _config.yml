@@ -7,11 +7,12 @@ first_name: Ziqian
 middle_name:
 last_name: Ding
 contact_note:
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: >- # fold lines without a trailing newline, including in JSON-LD metadata
   Ziqian Ding, PhD Student at Carnegie Mellon University. Research and working papers.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+# Optional hosting credit: add this line to footer_text to restore it.
+#   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Ziqian Ding, Carnegie Mellon University, research, working papers
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # optional favicon; add your own emoji or image when ready
@@ -108,8 +109,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags, including the site name
+serve_schema_org: true # Include Schema.org metadata identifying Ziqian Ding's website
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
